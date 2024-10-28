@@ -1,0 +1,160 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.user-list, .user-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.user-items {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.update-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.input-field {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.create-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.create-btn:hover {
+  background-color: #218838;
+}
+/* Container for pagination links */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Individual page items */
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Page link styling */
+.pagination a {
+  color: #007bff;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.pagination a:hover {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
+
+/* Active page styling */
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Next and Previous buttons */
+.pagination .previous a, 
+.pagination .next a {
+  font-weight: bold;
+}
+
+.pagination .disabled a {
+  color: #6c757d;
+  cursor: not-allowed;
+}
