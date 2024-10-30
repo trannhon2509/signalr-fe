@@ -6,8 +6,8 @@ import { Button, Modal, Form, Table } from 'react-bootstrap';
 import ReactPaginate from 'react-paginate';
 import UserRow from './UserRow';
 
-const API_BASE_URL = 'https://signalrwebsite.runasp.net/api/User';
-const SIGNALR_HUB_URL = 'https://signalrwebsite.runasp.net/userhub';
+const API_BASE_URL = 'http://signalrwebsite.runasp.net/api/User';
+const SIGNALR_HUB_URL = 'http://signalrwebsite.runasp.net/userhub';
 const PAGE_SIZE = 4;
 
 function App() {
