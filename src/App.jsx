@@ -29,7 +29,8 @@ function App() {
   const fetchUsers = async (page) => {
     try {
       const response = await axios.get(`${API_BASE_URL}/paged`, {
-        params: { pageNumber: page, pageSize: PAGE_SIZE }
+        params: { pageNumber: page, pageSize: PAGE_SIZE },
+        referrerPolicy: 'unsafe-url'
       });
       setUsers(response.data.data);
       setTotalPages(response.data.totalPages);
